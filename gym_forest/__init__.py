@@ -54,3 +54,21 @@ register(
     entry_point='gym_forest.envs:ForestDiscreteEnv',
     kwargs={'data': '../datasets/qubo_n10_test.npy',
             'label': 'qubo'})
+
+register(
+    id='forest-maxcut-test-qpu-v0',
+    entry_point='gym_forest.envs:ForestDiscreteEnv',
+    kwargs={'data': '../datasets/maxcut_n10_e5_test.npy',
+            'label': 'maxcut'})
+
+register(
+    id='forest-maxqp-test-v0',
+    entry_point='gym_forest.envs:ForestDiscreteEnv',
+    kwargs={'data': '../datasets/maxqp_n10_test.npy',
+            'label': 'maxqp'})
+
+register(
+    id='forest-qubo-test-v0',
+    entry_point='gym_forest.envs:ForestDiscreteEnv',
+    kwargs={'data': '../datasets/qubo_n10_test.npy',
+            'label': 'qubo'})
