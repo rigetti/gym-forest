@@ -1,3 +1,12 @@
+# Copyright 2019, Rigetti Computing
+#
+# This source code is licensed under the Apache License, Version 2.0 found in
+# the LICENSE.txt file in the root directory of this source tree.
+
+
+# This contains an example of training a `stable_baselines` agent
+# against a gym_forest environment.
+
 import os
 import datetime
 
@@ -21,7 +30,7 @@ time_stamp = datetime.datetime.now().timestamp()
 parameters = [env_name, policy.__name__, n_steps, lam, seed, time_stamp]
 
 label = '-'.join([str(i) for i in parameters])
-log_dir = os.path.join('..', 'models', label)
+log_dir = os.path.join(os.path.dirname(__file__), '..', 'models', label)
 if not os.path.exists(log_dir):
     os.makedirs(log_dir)
 print(log_dir)
