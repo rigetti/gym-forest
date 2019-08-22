@@ -12,12 +12,14 @@ Reinforcement Learning for Combinatorial Optimization".
 ## Installation
 
 In addition to cloning this repository, you will need to download the data files
-associated with the latest GitHub release. They should be unzipped at the
-toplevel of the `gym-forest` code directory.
+associated with the [latest GitHub
+release](https://github.com/rigetti/gym-forest/releases). They should be
+unzipped at the toplevel of the `gym-forest` code directory.
 
 ```
 git clone https://github.com/rigetti/gym-forest.git
 cd gym-forest
+<download data tarball>
 tar -xzf data.tar.bz2
 pip install .
 ```
