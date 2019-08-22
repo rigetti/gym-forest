@@ -5,8 +5,9 @@
 # gym-forest
 
 Gym environment for classical synthesis of quantum programs. For more
-information about this, see our paper "Automated Quantum Programming via
-Reinforcement Learning for Combinatorial Optimization".
+information about this, see our paper ["Automated Quantum Programming via
+Reinforcement Learning for Combinatorial
+Optimization"](https://arxiv.org/abs/1908.08054).
 
 
 ## Installation
@@ -26,9 +27,9 @@ pip install .
 
 ## Usage
 
-This library provides several OpenAI gym environments available for
-reinforcement learning tasks. For a very simple example, try the following at a
-python repl:
+This library provides several [OpenAI gym](https://gym.openai.com/) environments
+available for reinforcement learning tasks. For a very simple example, try the
+following at a python repl:
 
 ```
 >>> import gym
@@ -53,7 +54,8 @@ Actions are represented numerically, but encode a discrete set of gates:
 ```
 
 For more information, please take a look at `gym_forest/envs/gym_forest.py` and
-comments within.
+comments within. In particular, you can get a detailed look at the format of the
+observation vector in in `ForestDiscreteEnv.observation`.
 
 ## Available Environments
 
@@ -100,7 +102,7 @@ If you use this code, please cite:
 @article{mckiernan2019automated,
   title={Automated Quantum Programming via Reinforcement Learning for Combinatorial Optimization},
   author={McKiernan, K. and Davis, E. and Alam, M. S. and Rigetti, C.},
-  note={TODO},
+  note={arXiv:1908.08054},
   year={2019}
 }
 ```

@@ -233,6 +233,13 @@ class ForestDiscreteEnv(gym.Env):
     @property
     def observation(self):
         """Get the current observed quantum + problem state."""
+        # This consists of two things:
+        # - the measured bitstrings
+        # - the vectorized representation of the optimization problem
+        #
+        # In particular, the first 10*NUM_SHOTS (i.e. 100) entries are measured
+        # qubit values. The remaining entries are the weights of the problem
+        # graph.
         return np.concatenate([self.bitstrings.flatten(), self._prob_vec])
 
     def step(self, action):
