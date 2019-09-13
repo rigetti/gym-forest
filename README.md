@@ -24,6 +24,10 @@ tar -xvf data.tar.bz2
 pip install -e .
 ```
 
+**Note**: If installing on a Rigetti QMI, it is suggested that you install
+within a virtual environment. If you choose not to, you may need to instead
+invoke `pip install -e . --user` in the last step of the above.
+
 ## Usage
 
 This library provides several [OpenAI gym](https://gym.openai.com/) environments
